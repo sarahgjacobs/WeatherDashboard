@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+    
+}
+
+.container {
+    padding: 20px, 70px;
+    color: #fff;
+
+}
+
+.current-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.date-container {
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.date-container #time {
+    font-size: 70px;
+}
+
+.date-container #am-pm {
+    margin-left: 20px;
+    font-size: 30;
+}
