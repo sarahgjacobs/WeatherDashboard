@@ -17,10 +17,22 @@
       <p class="lead text-info">Check the weather around the world, anytime and anywhere!</p>
     </div>
   </div>
-  <div class="container">
-    <div class="current-info">
-      <div class="date-container">
-        <div class="time" id="time">12:30 <span id="am-pm">PM</span>
+  <div class="container" style="border: 1px solid black">
+    <div class="row">
+      <div class="col-3">
+        <label for="city">City:</label>
+        <input type="text" name="city" id="input">
+        <button class="btn btn-primary" id="search">Search</button>
+      </div>
+      <div class="col-8">
+        <div class="current-info">
+          <div class="date-container">
+
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="time" id="time">12:30 <span id="am-pm">PM</span>
         </div>
         <div class="date" id="date">
           Thursday, Dec 1
@@ -54,11 +66,11 @@
         <div class="temp">99.9&#176;</div>
       </div>
       <div class="weather-forecast" id="weather-forecast"></div>
+    </div> -->
+
     </div>
 
   </div>
-
-
 
   <script src="./assets/script.js"></script>
 </body>
