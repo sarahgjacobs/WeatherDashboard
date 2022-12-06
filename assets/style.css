@@ -6,7 +6,6 @@
 
 body {
     font-family: monospace;
-    
 }
 
 .container {
@@ -34,3 +33,13 @@ body {
     margin-left: 20px;
     font-size: 30;
 }
+
+.currentTemperatureMetric {
+    flex-direction: column;
+    display: grid;
+}
+
+.currentTemperatureValueContainer {
+    background-color: #595959;
+    width: 50%;
+} 

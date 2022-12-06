@@ -1,27 +1,9 @@
 // api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={d156093b6a1df25f03f07a0f8e88abc2}
 
+// var year = dayjs().format("YYYY");
+// var currentMonth = dayjs().format('MMMM');
+var today = Date.now;
 
-// var searchFormEl = document.querySelector("#citySearchForm");
-// var cityInputVal = document.querySelector("#inputCity");
-// var searchBtn = document.querySelector("#citySearch");
-// var popularCityListGroupEl = document.querySelector(".list-group-1");
-// var usersCityListGroupEl = document.querySelector(".list-group-2");
-
-// // Elements in WeatherContent Main div
-// var weatherContentDiv = document.querySelector("#weatherContent");
-// var cardDivEl = document.querySelector(".card");
-// var cardTitleEl = document.querySelector(".card-title");
-// var weatherIconEl = document.querySelector("#icon");
-// var uvIndexEl = document.querySelector("#uvIndex");
-
-// let weather = {
-//     "apiKey": "d156093b6a1df25f03f07a0f8e88abc2",
-//     fetchWeather: function() {
-//         fetch("https://api.openweathermap.org/data/2.5/")
-//         .then((response) => response.json())
-//         .then((data) => console.log(data))
-
-//     }, };
 
 const timeEl = document.getElementById('time')
 const dateEl = document.getElementById('date')
@@ -52,6 +34,7 @@ const months = ['Jan', 'Feb', 'Mar', 'Apr', 'Jun', 'Jul', 'Aug', 'Oct', 'Nov', '
 
 // }, 1000);
 
+dateEl.innerText = today;
 
 function getWeatherData(city) {
     console.log('Hello world')
@@ -82,6 +65,11 @@ function displayWeather(data) {
     var cityTitle = document.createElement("h3");
     cityTitle.textContent = data.name
     document.querySelector(".date-container").appendChild(cityTitle)
+    weatherDescription.innerText = data.weather[0].main
+    tempMin.innerText = data.main.temp_min
+    tempMax.innerText = data.main.temp_max
+    windSpeed.innerText = data.wind.speed
+    humidity.innerText = data.main.humidity
 }
 
 searchBtn.addEventListener("click", function () {
