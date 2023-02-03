@@ -22,12 +22,12 @@
     <div class="container text-center">
       <h1 class="display-5 mb-0">Weather Dashboard</h1>
       <p class="lead text-info">Check the weather around the world, anytime and anywhere!</p>
-      <p id="date">Today's Date is: </p>
+      <!-- <p id="date">Today's Date is: </p> -->
     </div>
   </div>
   <div class="container" style="border: 1px solid black">
     <div class="row">
-      <div class="col-small-4">
+      <div class="col-small-4 p-3">
         <label for="city">City: </label>
         <input type="text" name="city" id="input">
         <button class="btn btn-primary" id="search">Search</button>
@@ -39,23 +39,26 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 bg-light pt-3 pb-3">
-        <h4>Temperature Low: <span class="currentTemperatureMetric" id="tempMin">˚F</span>
-      </div>
-      <div class="col-lg-3 bg-light pt-3 pb-3">
-        <h4>Temperature High: <span class="currentTemperatureMetric" id="tempMax">˚F</span>
-      </div>
-      <div class="col-lg-3 bg-light pt-3 pb-3">
-        <h4>Wind Speed: <span class="currentTemperatureMetric" id="windSpeed">˚F</span>
-      </div>
-      <div class="col-lg-3 bg-light pt-3 pb-3">
-        <h4>Humidity: <span class="currentTemperatureMetric" id="humidity">˚F</span>
-      </div>
-
-
-
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-3 bg-light pt-3 pb-3">
+            <h4>Temperature Low: <span class="currentTemperatureMetric" id="tempMin">˚F</span>
+          </div>
+          <div class="col col-lg-3 bg-light pt-3 pb-3">
+            <h4>Temperature High: <span class="currentTemperatureMetric" id="tempMax">˚F</span>          </div>
+        </div>
+        </div>
+    <div class="row">
+        <div class="col col-lg-3 bg-light pt-3 pb-3">
+          <h4>Wind Speed: <span class="currentTemperatureMetric" id="windSpeed">˚F</span>
+          </div>
+        <div class="col col-lg-3 bg-light pt-3 pb-3">
+          <h4>Humidity: <span class="currentTemperatureMetric" id="humidity">˚F</span>
+          </div>
+        
+        </div>
       <div class="temperatureDescription" id="weatherDescription"></div>
-
+</div>
     </div>
 
   </div>

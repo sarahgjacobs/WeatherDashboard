@@ -19,26 +19,13 @@ var cityHistory = JSON.parse(localStorage.getItem("cityHistory")) || []
 const API_KEY = 'd156093b6a1df25f03f07a0f8e88abc2'
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'Jun', 'Jul', 'Aug', 'Oct', 'Nov', 'Dec'];
-// setInterval(() => {
-//     const time = new Date;
-//     const month = time.getMonth();
-//     const date = time.getDate();
-//     const day = time.getDay();
-//     const hour = time.getHours();
-//     const hoursIn12 = hour >= 13 ? hour % 12 : hour;
-//     const minute = time.getMinutes();
-//     const ampm = hour >= 12 ? 'PM' : 'AM'
 
-//     timeEl.innerHTML = hoursIn12 + ':' + minute + ' ' + `<span id="am-pm">${ampm}</span>`
-//     dateEl.innerHTML = days[day] + ', ' + date + ' ' + months[month]
-
-// }, 1000);
 
 dateEl.innerText = today;
 
 function getWeatherData(city) {
     console.log('Hello world')
-    var geourl = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=" + API_KEY
+    var geourl = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=" + API_KEY
     fetch(geourl).then(response => {
         return response.json()
     }).then(data => {
