@@ -21,7 +21,7 @@ const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'Jun', 'Jul', 'Aug', 'Oct', 'Nov', 'Dec'];
 
 
-dateEl.innerText = today;
+// dateEl.innerText = today;
 
 function getWeatherData(city) {
     console.log('Hello world')
