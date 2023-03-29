@@ -6,11 +6,11 @@ Weather Dashboard is an interactive website designed to allow users to search an
 
 ## Installation
 
-You can find the deployed site here:
+You can find the deployed site [here](https://sarahgjacobs.github.io/WeatherDashboard/)
 
-This is what the finished site will look like:
+This is what the finished site looks like:
 
-*image*
+![Screenshot of Weather Website](./assets/Screen%20Shot%202023-03-29%20at%201.12.20%20PM.png "Sarah Jacobs Weather Dashboard")
 
 ## User Story
 
